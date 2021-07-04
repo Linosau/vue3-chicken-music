@@ -1,10 +1,27 @@
+<!--
+ * @Author: Linosau
+ * @Date: 2021-07-03 21:25:40
+ * @LastEditTime: 2021-07-04 15:41:16
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /vue3-music/src/App.vue
+-->
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
-  <router-view/>
+  <m-header></m-header>
 </template>
+
+<script>
+import MHeader from '@/components/header'
+
+export default {
+  components: {
+    MHeader
+  },
+  setup () {
+
+  }
+}
+</script>
 
 <style lang="scss">
 #app {

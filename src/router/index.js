@@ -1,20 +1,14 @@
+/*
+ * @Author: Linosau
+ * @Date: 2021-07-03 21:25:40
+ * @LastEditTime: 2021-07-04 15:32:46
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /vue3-music/src/router/index.js
+ */
 import { createRouter, createWebHashHistory } from 'vue-router'
-import Home from '../views/Home.vue'
 
 const routes = [
-  {
-    path: '/',
-    name: 'Home',
-    component: Home
-  },
-  {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-  }
 ]
 
 const router = createRouter({
