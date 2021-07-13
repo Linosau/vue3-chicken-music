@@ -1,7 +1,7 @@
 /*
  * @Author: Linosau
  * @Date: 2021-07-04 15:03:24
- * @LastEditTime: 2021-07-05 01:39:29
+ * @LastEditTime: 2021-07-13 14:49:13
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vue3-music/vue.config.js
@@ -9,7 +9,8 @@
 const registerRouter = require('./backend/router')
 
 module.exports = {
-  publicPath: process.env.NODE_ENV === 'production' ? '/music-next/' : '/',
+  // publicPath: process.env.NODE_ENV === 'production' ? '/music-next/' : '/',
+  publicPath: process.env.NODE_ENV === 'production' ? './' : '/',
   productionSourceMap: false,
   css: {
     loaderOptions: {
