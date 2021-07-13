@@ -1,7 +1,7 @@
 <!--
  * @Author: Linosau
  * @Date: 2021-07-04 15:47:58
- * @LastEditTime: 2021-07-04 15:51:52
+ * @LastEditTime: 2021-07-05 15:33:19
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vue3-music/src/components/tab/index.vue
@@ -13,6 +13,7 @@
       v-for="tab in tabs"
       :key="tab.path"
       :to="tab.path"
+      replace
     >
       <span class="tab-link">{{tab.name}}</span>
     </router-link>
